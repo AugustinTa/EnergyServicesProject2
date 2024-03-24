@@ -23,6 +23,7 @@ fig2 = px.line(df_results,x=df_results.columns[0],y=df_results.columns[1:11])
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server=app.server
 
 app.layout = html.Div([
     html.H1('IST Energy Forecast tool (kWh)'),
